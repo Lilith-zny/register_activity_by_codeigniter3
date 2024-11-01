@@ -40,13 +40,13 @@
 <body>
 
 <div class="container">
-<?php foreach ($query as $row): ?>
+<?php foreach ($query as $index => $row): ?>
 <div class="card">
   <img src="<?php echo $row->img; ?>" alt="Image">
   <div class="card-body">
     <h5 class="card-title"><?php echo $row->title; ?></h5>
     <p class="card-text"><?php echo $row->description; ?></p>
-    <a href="<?php echo base_url();?>main/detail_activity" class="btn btn-primary">สมัคร</a>
+    <a href="<?php echo base_url();?>main/detail_activity/<?php echo $index + 1; ?>" class="btn btn-primary">สมัคร</a>
   </div>
 </div>
 <?php endforeach; ?>

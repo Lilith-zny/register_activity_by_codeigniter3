@@ -39,10 +39,13 @@
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="btn btn-outline-light mr-2" href="#">Login</a>
+                    <a class="btn btn-outline-light mr-2" href="<?php echo base_url();?>main/login">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="btn btn-light" href="#">สมัคร</a>
+                    <a class="btn btn-light" href="<?php echo base_url();?>main/register">สมัคร</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-light ml-2" href="<?php echo base_url();?>backend/logout">logout</a>
                 </li>
             </ul>
         </div>
